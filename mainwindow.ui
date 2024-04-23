@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>957</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/logo.ico</normaloff>:/logo.ico</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>40</width>
+    <height>40</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="background">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>160</red>
+         <green>160</green>
+         <blue>160</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="activationOrder">
+       <enum>QMdiArea::CreationOrder</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="tabsMovable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>957</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menua">
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <addaction name="connectAction"/>
+    <addaction name="disconnectAction"/>
+    <addaction name="separator"/>
+    <addaction name="action_in"/>
+    <addaction name="separator"/>
+    <addaction name="closeAction"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>显示</string>
+    </property>
+    <addaction name="actionHEX"/>
+    <addaction name="actionUnsigned"/>
+    <addaction name="actionHideEorro"/>
+    <addaction name="separator"/>
+    <addaction name="action_tab"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>操作</string>
+    </property>
+    <addaction name="readAction"/>
+    <addaction name="action_1_write"/>
+    <addaction name="autoReadAction"/>
+    <addaction name="separator"/>
+    <addaction name="action_hide"/>
+    <addaction name="actionShowAllDock"/>
+    <addaction name="action_tidy"/>
+    <addaction name="separator"/>
+    <addaction name="actionClearDock"/>
+   </widget>
+   <addaction name="menua"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>29</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionconnect"/>
+   <addaction name="separator"/>
+   <addaction name="action_in"/>
+   <addaction name="action_out"/>
+   <addaction name="action_stop"/>
+   <addaction name="actionGroup"/>
+   <addaction name="separator"/>
+   <addaction name="autoReadAction"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>6</width>
+     <height>6</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(240, 240, 240);</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="connectAction">
+   <property name="text">
+    <string>连接</string>
+   </property>
+  </action>
+  <action name="disconnectAction">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>断开</string>
+   </property>
+  </action>
+  <action name="actionlog">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>log</string>
+   </property>
+  </action>
+  <action name="modBusAction">
+   <property name="text">
+    <string>ModBus参数</string>
+   </property>
+  </action>
+  <action name="closeAction">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionHEX">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>HEX显示</string>
+   </property>
+   <property name="iconText">
+    <string>HEX显示</string>
+   </property>
+  </action>
+  <action name="autoReadAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>自动读取</string>
+   </property>
+  </action>
+  <action name="readAction">
+   <property name="text">
+    <string>手动读取</string>
+   </property>
+  </action>
+  <action name="actionconnect">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/Images/connected.png</normaloff>:/Images/connected.png</iconset>
+   </property>
+   <property name="text">
+    <string>连接</string>
+   </property>
+   <property name="toolTip">
+    <string>连接</string>
+   </property>
+  </action>
+  <action name="action_1_write">
+   <property name="text">
+    <string>手动写入</string>
+   </property>
+  </action>
+  <action name="action_out">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/Images/table.png</normaloff>:/Images/table.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出记录</string>
+   </property>
+  </action>
+  <action name="actionClearDock">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/Images/del.png</normaloff>:/Images/del.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭所有窗口</string>
+   </property>
+  </action>
+  <action name="actionShowAllDock">
+   <property name="text">
+    <string>打开所有窗口</string>
+   </property>
+  </action>
+  <action name="action_tidy">
+   <property name="text">
+    <string>整理窗口</string>
+   </property>
+  </action>
+  <action name="action_test">
+   <property name="text">
+    <string>测试专用の无敌牛逼按钮PlusMAX</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_stop">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/Images/stop.png</normaloff>:/Images/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>停止记录</string>
+   </property>
+  </action>
+  <action name="action_in">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/Images/new.png</normaloff>:/Images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入协议</string>
+   </property>
+  </action>
+  <action name="action_tab">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>窗口并列(Tab)</string>
+   </property>
+  </action>
+  <action name="action_hide">
+   <property name="text">
+    <string>隐藏所有窗口</string>
+   </property>
+  </action>
+  <action name="actionHideEorro">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>隐藏异常提示</string>
+   </property>
+   <property name="toolTip">
+    <string>隐藏异常提示</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>false</bool>
+   </property>
+   <property name="priority">
+    <enum>QAction::HighPriority</enum>
+   </property>
+  </action>
+  <action name="actioninfor">
+   <property name="text">
+    <string>infor</string>
+   </property>
+  </action>
+  <action name="actionUnsigned">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>无符号显示</string>
+   </property>
+  </action>
+  <action name="actionGroup">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/Images/group.png</normaloff>:/Images/group.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据表</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

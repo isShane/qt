@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/add.png</file>
+        <file>Images/connected.png</file>
+        <file>Images/del.png</file>
+        <file>Images/disconnected.png</file>
+        <file>Images/new.png</file>
+        <file>Images/off.png</file>
+        <file>Images/on.png</file>
+        <file>Images/stop.png</file>
+        <file>Images/table.png</file>
+        <file>Images/group.png</file>
+    </qresource>
+</RCC>
